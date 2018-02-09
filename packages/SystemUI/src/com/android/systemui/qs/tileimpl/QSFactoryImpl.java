@@ -45,6 +45,7 @@ import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.UiModeNightTile;
 import com.android.systemui.qs.tiles.SoundTile;
 import com.android.systemui.qs.tiles.SmartPixelsTile;
+import com.android.systemui.qs.tiles.SoundSearchTile;
 import com.android.systemui.qs.tiles.UserTile;
 import com.android.systemui.qs.tiles.WeatherTile;
 import com.android.systemui.qs.tiles.WifiTile;
@@ -185,6 +186,8 @@ public class QSFactoryImpl implements QSFactory {
                 return new MusicTile(mHost);
             case "weather":
                 return new WeatherTile(mHost);
+            case "soundsearch":
+                return new SoundSearchTile(mHost);
         }
 
         // Intent tiles.
