@@ -3619,26 +3619,6 @@ public final class Settings {
 
         /**
          * Control whether to enable adaptive sleep mode.
-        /**
-         * Whether user can swap the order of the Alert Slider.
-         * * Whether user can invert the order of the Alert Slider.
-         * 0: Default
-         * 1: Inverted
-         * @hide
-         */
-        public static final String ALERT_SLIDER_ORDER = "alert_slider_order";
-
-        /**
-         * Preferred silent mode for Alert Slider..
-         * 0: Alarms only.
-         * 1: Total silence
-         * @hide
-         */
-        public static final String ALERT_SLIDER_SILENT_MODE = "alert_slider_silent_mode";
-
-        /**
-         * The time in ms to keep the button backlight on after pressing a button.
-         * A value of 0 will keep the buttons on for as long as the screen is on.
          * @hide
          */
         public static final String ADAPTIVE_SLEEP = "adaptive_sleep";
