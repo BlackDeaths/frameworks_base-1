@@ -2143,12 +2143,9 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         }
 
 
-        boolean hasAlertSliderKeycode = context.getResources().
-                getBoolean(com.android.internal.R.bool.config_hasAlertSlider)
-                && context.getResources().getInteger(com.android.internal.R.integer.config_sliderTopCode) != 0
-                && context.getResources().getInteger(com.android.internal.R.integer.config_sliderMiddleCode) != 0
-                && context.getResources().getInteger(com.android.internal.R.integer.config_sliderBottomCode) != 0;
-        if (hasAlertSliderKeycode) {
+        boolean hasAlertSlider = context.getResources().
+                getBoolean(com.android.internal.R.bool.config_hasAlertSlider);
+        if (hasAlertSlider) {
             mAlertSliderHandler = new AlertSliderHandler(mContext);
         }
 
